@@ -43,4 +43,8 @@
             lbuser.Text = userName
         End If
     End Sub
+
+    Private Sub item3_Click(sender As Object, e As EventArgs) Handles item3.Click
+        switchPanel(frmPurchase, "ການສັ່ງຊື້ສິນຄ້າ")
+    End Sub
 End Class

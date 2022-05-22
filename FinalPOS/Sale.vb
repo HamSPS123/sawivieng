@@ -2,6 +2,7 @@
 Imports CrystalDecisions.CrystalReports.Engine
 Public Class Sale
     Private Sub btnSeachPro_Click(sender As Object, e As EventArgs) Handles btnSeachPro.Click
+        SearchProduct.check = "Sale"
         SearchProduct.Show()
     End Sub
 
@@ -226,6 +227,7 @@ Public Class Sale
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         If pay < cost Or pay = 0 Then
             MessageBox.Show("ກະລຸນາປ້ອນຈຳນວນເງິນໃຫ້ຖືກຕ້ອງ!!!", "ເຕືອນ", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+
         Else
 
             Dim Sql = "INSERT INTO sale SET emp_id='" + userID + "', cus_id='" + txtCusID.Text + "', sale_pay='" + pay.ToString + "', sale_discount='" + discount.ToString + "'"
@@ -244,10 +246,13 @@ Public Class Sale
                     Dim price = dgvshow.Rows(i).Cells(2).Value
                     Dim qty = dgvshow.Rows(i).Cells(3).Value
                     InsertDB("INSERT INTO sale_detail SET sale_id='" + sale_id.ToString + "',mdc_id='" + mdc_id.ToString + "',sd_price='" + price.ToString + "',sd_qty='" + qty.ToString + "'")
+                    InsertDB("UPDATE medicine SET mdc_stock = mdc_stock - " + qty + " WHERE mdc_id='" + mdc_id + "'")
                 Next
 
 
-                If MessageBox.Show("ທ່ານຕ້ອງການພິມໃບບິນ ຫຼື ບໍ່?", "ຄຳຖາມ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) Then
+
+
+                If MessageBox.Show("ທ່ານຕ້ອງການພິມໃບບິນ ຫຼື ບໍ່?", "ຄຳຖາມ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
                     'Dim rpt As New ReportDocument
                     Dim report As New rptBill
                     'rpt.Load(report)

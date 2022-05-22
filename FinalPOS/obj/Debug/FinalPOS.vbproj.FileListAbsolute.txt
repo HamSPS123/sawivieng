@@ -67,3 +67,5 @@ C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\bin\Debug\CrystalDecisions.Windows
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.frmBill.resources
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.searchSale.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.frmPurchase.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.frmRptPurchase.resources

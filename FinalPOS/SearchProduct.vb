@@ -1,4 +1,6 @@
 ﻿Public Class SearchProduct
+
+    Public Property check As String
     Private Sub SearchProduct_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         showData("")
 
@@ -42,7 +44,12 @@
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        Sale.addCart(txtProID.Text, txtQty.Value)
+
+        If check = "Sale" Then
+            Sale.addCart(txtProID.Text, txtQty.Value)
+        Else
+            frmPurchase.addCart(txtProID.Text, txtQty.Value)
+        End If
         Me.Close()
     End Sub
 End Class

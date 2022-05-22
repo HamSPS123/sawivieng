@@ -173,6 +173,18 @@
     <Compile Include="frmBill.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmPurchase.Designer.vb">
+      <DependentUpon>frmPurchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptPurchase.Designer.vb">
+      <DependentUpon>frmRptPurchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +224,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptBill.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPurchase.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPurchase.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Sale.Designer.vb">
@@ -301,6 +319,12 @@
     <EmbeddedResource Include="frmBill.resx">
       <DependentUpon>frmBill.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchase.resx">
+      <DependentUpon>frmPurchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptPurchase.resx">
+      <DependentUpon>frmRptPurchase.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +343,10 @@
     <EmbeddedResource Include="rptBill.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptBill.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPurchase.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPurchase.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Sale.resx">
       <DependentUpon>Sale.vb</DependentUpon>
