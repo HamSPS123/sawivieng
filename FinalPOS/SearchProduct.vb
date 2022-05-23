@@ -35,12 +35,19 @@
     Private Sub dgvshow_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgvshow.CellMouseClick
         Dim cindex As Integer = dgvshow.CurrentRow.Index
 
-        txtProID.Text = dgvshow.Item(0, cindex).Value.ToString
-        'txtQty.Value = dgvshow.Item(3, cindex).Value
+        If check = "Import" Then
+            frmImport.txtProID.Text = dgvshow.Item(0, cindex).Value.ToString
+            frmImport.txtPrice.Text = dgvshow.Item(6, cindex).Value.ToString
+            Me.Close()
+        Else
 
-        txtProID.Enabled = True
-        txtQty.Enabled = True
-        btnAdd.Enabled = True
+            txtProID.Text = dgvshow.Item(0, cindex).Value.ToString
+            'txtQty.Value = dgvshow.Item(3, cindex).Value
+
+            txtProID.Enabled = True
+            txtQty.Enabled = True
+            btnAdd.Enabled = True
+        End If
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click

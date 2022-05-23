@@ -69,3 +69,4 @@ C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.frmBill.resourc
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.searchSale.resources
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.frmPurchase.resources
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.frmRptPurchase.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.frmImport.resources

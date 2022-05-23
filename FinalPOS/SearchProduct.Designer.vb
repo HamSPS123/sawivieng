@@ -22,9 +22,9 @@ Partial Class SearchProduct
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SearchProduct))
         Me.dgvshow = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -45,34 +45,34 @@ Partial Class SearchProduct
         '
         Me.dgvshow.AllowUserToAddRows = False
         Me.dgvshow.AllowUserToDeleteRows = False
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(239, Byte), Integer))
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.dgvshow.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(239, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.dgvshow.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvshow.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvshow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvshow.BackgroundColor = System.Drawing.Color.White
         Me.dgvshow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(184, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Saysettha OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
-        DataGridViewCellStyle11.Padding = New System.Windows.Forms.Padding(5)
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvshow.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(184, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Saysettha OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
+        DataGridViewCellStyle2.Padding = New System.Windows.Forms.Padding(5)
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvshow.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvshow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvshow.EnableHeadersVisualStyles = False
         Me.dgvshow.Location = New System.Drawing.Point(15, 96)
         Me.dgvshow.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dgvshow.Name = "dgvshow"
         Me.dgvshow.RowHeadersWidth = 51
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black
-        Me.dgvshow.RowsDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        Me.dgvshow.RowsDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvshow.RowTemplate.Height = 24
         Me.dgvshow.Size = New System.Drawing.Size(1037, 444)
         Me.dgvshow.TabIndex = 2
@@ -84,9 +84,9 @@ Partial Class SearchProduct
         Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GroupBox1.Font = New System.Drawing.Font("Saysettha OT", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(642, 13)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(412, 71)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
@@ -97,7 +97,7 @@ Partial Class SearchProduct
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PictureBox1.Location = New System.Drawing.Point(359, 25)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(44, 38)
         Me.PictureBox1.TabIndex = 1
@@ -108,9 +108,9 @@ Partial Class SearchProduct
         Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtSearch.Font = New System.Drawing.Font("Saysettha OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSearch.Location = New System.Drawing.Point(8, 26)
-        Me.txtSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(343, 24)
+        Me.txtSearch.Size = New System.Drawing.Size(343, 30)
         Me.txtSearch.TabIndex = 0
         '
         'txtProID
@@ -119,7 +119,7 @@ Partial Class SearchProduct
         Me.txtProID.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
         Me.txtProID.Location = New System.Drawing.Point(15, 41)
         Me.txtProID.Name = "txtProID"
-        Me.txtProID.Size = New System.Drawing.Size(193, 31)
+        Me.txtProID.Size = New System.Drawing.Size(193, 37)
         Me.txtProID.TabIndex = 4
         '
         'Label1
@@ -128,7 +128,7 @@ Partial Class SearchProduct
         Me.Label1.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
         Me.Label1.Location = New System.Drawing.Point(12, 13)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(80, 22)
+        Me.Label1.Size = New System.Drawing.Size(97, 27)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "ລະຫັດສິນຄ້າ"
         '
@@ -138,7 +138,7 @@ Partial Class SearchProduct
         Me.Label2.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
         Me.Label2.Location = New System.Drawing.Point(218, 13)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 22)
+        Me.Label2.Size = New System.Drawing.Size(62, 27)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "ຈຳນວນ"
         '
@@ -149,7 +149,7 @@ Partial Class SearchProduct
         Me.txtQty.Location = New System.Drawing.Point(222, 41)
         Me.txtQty.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.txtQty.Name = "txtQty"
-        Me.txtQty.Size = New System.Drawing.Size(120, 31)
+        Me.txtQty.Size = New System.Drawing.Size(120, 37)
         Me.txtQty.TabIndex = 6
         Me.txtQty.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
@@ -163,7 +163,7 @@ Partial Class SearchProduct
         Me.btnAdd.ForeColor = System.Drawing.Color.White
         Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
         Me.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnAdd.Location = New System.Drawing.Point(362, 34)
+        Me.btnAdd.Location = New System.Drawing.Point(362, 39)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(116, 40)
         Me.btnAdd.TabIndex = 7
@@ -183,7 +183,7 @@ Partial Class SearchProduct
         Me.Controls.Add(Me.txtProID)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.dgvshow)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "SearchProduct"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SearchProduct"

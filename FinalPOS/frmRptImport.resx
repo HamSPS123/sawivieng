@@ -117,37 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnSeachPro.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAArxJREFUWEft
-        l7trVEEYxddHfAsW8YkGMT7RiNgoFlqIhaR1tVrY90u2WELQRlitVMQqBANWUQTBqP+AaCMoKIgiiEQL
-        3agEwcLoQkDX33c5FzYQknsnayK4Bw4ze76ZM9+dmTt3NtLCf4NCobAjm832wr5cLnebchBeoX4iFost
-        V7O/i0wmc5wBnzFwfQr+hH3pdHqtujUXyWRyJQPcaxiwrqSukeBFyquUtyi/+nH4He2kLJqDRCKxGuNX
-        GuAXHEylUlsVnoBKpbKQJE/R5q3a/4ZnFZ4ZMFrWsCyj1A8rNCWi0egiZuW6+tWpZxRyB0YXZFjD75Dk
-        oJhHvxvqP8ZSb5AeHsVicZ2ZmBkzUpIcCqVSaTH93yihAcnhQQJnZPIetkkODdvE8qnxgCskhwMmT2Vy
-        TpIT2D8L8Bg1L0tMcnDwVsyn87gZcF4clOwMZtkORnuwS5KCI5/Pr1Fn43rJzsDjsnmR1E1JwUEym/1k
-        4vH4KsnOwKeiZO5KCo5yubzUTwbulOwMPAbk1S8pHOg4YgZsupgkZ+DzQsn0SAoHkvBOUMr7kpyAR6cS
-        sZdhl+RwYH2PycS+R/slhwZ9/VP4pSQ3kNADGT23fSQ5MOjXDe1hzKNbshtYot2YeJ8EOMSbtUShaUH7
-        A/Cb+t6R7A67KmD0SYbGJ7BL4UlBvA2ehjVofV7bfUhhN7BE2zD6KMMv0G5wVrdpHyKe4DzaQ72db84m
-        ZvEI2nl++3cZ4+MZ3/iUSFWGIwy0He6j/kjadByzxOyrLUs32MCY+YlU7bdCHhjkKHo/fAf9zWn8QduH
-        lL12/VBzdygR77CDVZshhSaF3eho12FXU0nNAaZd0PvUQ3vqDoVmF/9MIuz2vQ2JDM9ZIvwz3MLgn5XI
-        B9ip0OzDroRsWvvzNWxnheS5g70RLNVG/WyhhYmIRP4Av4HNBYY+QvAAAAAASUVORK5CYII=
-</value>
-  </data>
 </root>

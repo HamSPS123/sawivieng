@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmPurchase
+Partial Class frmImport
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,10 +22,10 @@ Partial Class frmPurchase
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPurchase))
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmImport))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.dgvshow = New System.Windows.Forms.DataGridView()
@@ -35,19 +35,19 @@ Partial Class frmPurchase
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnPrint = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtTotalPrice = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btnSave = New System.Windows.Forms.Button()
         Me.btnAddCard = New System.Windows.Forms.Button()
-        Me.txtSupplier = New System.Windows.Forms.ComboBox()
         Me.btnSeachPro = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.txtQTY = New System.Windows.Forms.NumericUpDown()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtProID = New System.Windows.Forms.TextBox()
-        Me.btnPrint = New System.Windows.Forms.Button()
+        Me.txtPrice = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         CType(Me.dgvshow, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,10 +62,10 @@ Partial Class frmPurchase
         Me.Panel1.Controls.Add(Me.GroupBox4)
         Me.Panel1.Controls.Add(Me.GroupBox3)
         Me.Panel1.Controls.Add(Me.GroupBox1)
-        Me.Panel1.Location = New System.Drawing.Point(70, -5)
+        Me.Panel1.Location = New System.Drawing.Point(58, 11)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1236, 735)
+        Me.Panel1.Size = New System.Drawing.Size(1345, 734)
         Me.Panel1.TabIndex = 1
         '
         'GroupBox4
@@ -76,7 +76,7 @@ Partial Class frmPurchase
         Me.GroupBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox4.Size = New System.Drawing.Size(812, 526)
+        Me.GroupBox4.Size = New System.Drawing.Size(948, 526)
         Me.GroupBox4.TabIndex = 0
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "ຍອດລວມ"
@@ -85,21 +85,21 @@ Partial Class frmPurchase
         '
         Me.dgvshow.AllowUserToAddRows = False
         Me.dgvshow.AllowUserToDeleteRows = False
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(239, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.dgvshow.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(239, Byte), Integer))
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
+        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.dgvshow.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
         Me.dgvshow.BackgroundColor = System.Drawing.Color.White
         Me.dgvshow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(184, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Saysettha OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
-        DataGridViewCellStyle5.Padding = New System.Windows.Forms.Padding(5)
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvshow.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(184, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Saysettha OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
+        DataGridViewCellStyle14.Padding = New System.Windows.Forms.Padding(5)
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvshow.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.dgvshow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvshow.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
         Me.dgvshow.Dock = System.Windows.Forms.DockStyle.Fill
@@ -108,11 +108,11 @@ Partial Class frmPurchase
         Me.dgvshow.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvshow.Name = "dgvshow"
         Me.dgvshow.RowHeadersWidth = 51
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
-        Me.dgvshow.RowsDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black
+        Me.dgvshow.RowsDefaultCellStyle = DataGridViewCellStyle15
         Me.dgvshow.RowTemplate.Height = 24
-        Me.dgvshow.Size = New System.Drawing.Size(806, 492)
+        Me.dgvshow.Size = New System.Drawing.Size(942, 492)
         Me.dgvshow.TabIndex = 1
         '
         'Column2
@@ -152,88 +152,91 @@ Partial Class frmPurchase
         '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.btnPrint)
         Me.GroupBox3.Controls.Add(Me.btnSave)
+        Me.GroupBox3.Controls.Add(Me.btnPrint)
         Me.GroupBox3.Controls.Add(Me.Label3)
         Me.GroupBox3.Controls.Add(Me.txtTotalPrice)
         Me.GroupBox3.Font = New System.Drawing.Font("Saysettha OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(883, 387)
+        Me.GroupBox3.Location = New System.Drawing.Point(993, 389)
         Me.GroupBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox3.Size = New System.Drawing.Size(323, 324)
+        Me.GroupBox3.Size = New System.Drawing.Size(317, 322)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "ຍອດລວມ"
+        '
+        'btnSave
+        '
+        Me.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnSave.Location = New System.Drawing.Point(16, 147)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(289, 58)
+        Me.btnSave.TabIndex = 3
+        Me.btnSave.Text = "ບັນທຶກການນຳເຂົ້າ"
+        Me.btnSave.UseVisualStyleBackColor = True
+        '
+        'btnPrint
+        '
+        Me.btnPrint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnPrint.Location = New System.Drawing.Point(16, 219)
+        Me.btnPrint.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Size = New System.Drawing.Size(289, 58)
+        Me.btnPrint.TabIndex = 3
+        Me.btnPrint.Text = "ພີມໃບບິນ"
+        Me.btnPrint.UseVisualStyleBackColor = True
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Saysettha OT", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(15, 32)
+        Me.Label3.Location = New System.Drawing.Point(11, 67)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(89, 27)
+        Me.Label3.Size = New System.Drawing.Size(82, 27)
         Me.Label3.TabIndex = 1
-        Me.Label3.Text = "ລາຄາລວມ"
+        Me.Label3.Text = "ຍອດລວມ"
         '
         'txtTotalPrice
         '
-        Me.txtTotalPrice.Location = New System.Drawing.Point(20, 61)
+        Me.txtTotalPrice.Location = New System.Drawing.Point(101, 64)
         Me.txtTotalPrice.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtTotalPrice.Name = "txtTotalPrice"
         Me.txtTotalPrice.ReadOnly = True
-        Me.txtTotalPrice.Size = New System.Drawing.Size(276, 37)
+        Me.txtTotalPrice.Size = New System.Drawing.Size(196, 37)
         Me.txtTotalPrice.TabIndex = 0
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtPrice)
         Me.GroupBox1.Controls.Add(Me.btnAddCard)
-        Me.GroupBox1.Controls.Add(Me.txtSupplier)
         Me.GroupBox1.Controls.Add(Me.btnSeachPro)
-        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.txtQTY)
+        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtProID)
         Me.GroupBox1.Font = New System.Drawing.Font("Saysettha OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(37, 11)
+        Me.GroupBox1.Location = New System.Drawing.Point(37, 32)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(1184, 135)
+        Me.GroupBox1.Size = New System.Drawing.Size(948, 135)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "ຂໍ້ມູນສິນຄ້າ"
         '
-        'btnSave
-        '
-        Me.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnSave.Location = New System.Drawing.Point(20, 139)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(289, 58)
-        Me.btnSave.TabIndex = 3
-        Me.btnSave.Text = "ບັນທຶກການສັ່ງຊື້"
-        Me.btnSave.UseVisualStyleBackColor = True
-        '
         'btnAddCard
         '
         Me.btnAddCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnAddCard.Location = New System.Drawing.Point(506, 60)
+        Me.btnAddCard.Location = New System.Drawing.Point(787, 46)
         Me.btnAddCard.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnAddCard.Name = "btnAddCard"
-        Me.btnAddCard.Size = New System.Drawing.Size(129, 52)
+        Me.btnAddCard.Size = New System.Drawing.Size(144, 79)
         Me.btnAddCard.TabIndex = 3
         Me.btnAddCard.Text = "ເພີ່ມລາຍການ"
         Me.btnAddCard.UseVisualStyleBackColor = True
-        '
-        'txtSupplier
-        '
-        Me.txtSupplier.FormattingEnabled = True
-        Me.txtSupplier.Location = New System.Drawing.Point(662, 77)
-        Me.txtSupplier.Name = "txtSupplier"
-        Me.txtSupplier.Size = New System.Drawing.Size(206, 35)
-        Me.txtSupplier.TabIndex = 4
         '
         'btnSeachPro
         '
@@ -245,15 +248,6 @@ Partial Class frmPurchase
         Me.btnSeachPro.Size = New System.Drawing.Size(51, 37)
         Me.btnSeachPro.TabIndex = 3
         Me.btnSeachPro.UseVisualStyleBackColor = True
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(660, 46)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(123, 27)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "ລະຫັດຜູ້ສະໜອງ"
         '
         'txtQTY
         '
@@ -291,25 +285,30 @@ Partial Class frmPurchase
         Me.txtProID.Size = New System.Drawing.Size(241, 37)
         Me.txtProID.TabIndex = 0
         '
-        'btnPrint
+        'txtPrice
         '
-        Me.btnPrint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnPrint.Location = New System.Drawing.Point(20, 218)
-        Me.btnPrint.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnPrint.Name = "btnPrint"
-        Me.btnPrint.Size = New System.Drawing.Size(289, 58)
-        Me.btnPrint.TabIndex = 4
-        Me.btnPrint.Text = "ພີມໃບບິນ"
-        Me.btnPrint.UseVisualStyleBackColor = True
+        Me.txtPrice.Location = New System.Drawing.Point(523, 74)
+        Me.txtPrice.Name = "txtPrice"
+        Me.txtPrice.Size = New System.Drawing.Size(228, 37)
+        Me.txtPrice.TabIndex = 4
         '
-        'frmPurchase
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(518, 44)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(50, 27)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "ລາຄາ"
+        '
+        'frmImport
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.ClientSize = New System.Drawing.Size(1394, 732)
+        Me.ClientSize = New System.Drawing.Size(1455, 751)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "frmPurchase"
-        Me.Text = "frmPurchase"
+        Me.Name = "frmImport"
+        Me.Text = "frmImport"
         Me.Panel1.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
         CType(Me.dgvshow, System.ComponentModel.ISupportInitialize).EndInit()
@@ -330,9 +329,11 @@ Partial Class frmPurchase
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents btnSave As Button
-    Friend WithEvents txtSupplier As ComboBox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents btnPrint As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtTotalPrice As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents btnAddCard As Button
     Friend WithEvents btnSeachPro As Button
@@ -340,8 +341,6 @@ Partial Class frmPurchase
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents txtProID As TextBox
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents txtTotalPrice As TextBox
-    Friend WithEvents btnPrint As Button
+    Friend WithEvents txtPrice As TextBox
+    Friend WithEvents Label4 As Label
 End Class

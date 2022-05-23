@@ -6,7 +6,7 @@
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles item4.Click
-
+        switchPanel(frmImport, "ການນຳເຂົ້າຢາ")
     End Sub
     Sub switchPanel(ByVal panel As Form, title As String)
         pnMain.Controls.Clear()
