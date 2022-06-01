@@ -27,46 +27,53 @@ Public Class Sale
             proPrice = dt.Rows(0)(6)
             total_price = proPrice * QTy
 
-
-            'MessageBox.Show("ຈຳນວນໃນສະຕ໋ອກຕົວຈິງບໍ່ຊອດຄອງກັບຈຳນວນທີ່ທ່ານປ້ອນ ກະລຸນາລອງໃໝ່ອີກຄັ້ງ!!!")
-            'Else
-            Dim eRow As Integer
-            For i As Integer = 0 To dgvshow.Rows.Count - 1
-                If dgvshow.Item(0, i).Value.ToString = proID Then
-                    eRow = i
-                    check = True
-                    Exit For
-                Else
-                    check = False
-                End If
-            Next
-
-            If check = True Then
-                'MessageBox.Show("ສິນຄ້ານີ້ມີແລ້ວ")
-
-                QTy += dgvshow.Item(3, eRow).Value
-                total_price += dgvshow.Item(4, eRow).Value
-
-                If QTy > dt.Rows(0)(4) Then
-                    MessageBox.Show("ຈຳນວນໃນສະຕ໋ອກຕົວຈິງບໍ່ຊອດຄອງກັບຈຳນວນທີ່ທ່ານປ້ອນ ກະລຸນາລອງໃໝ່ອີກຄັ້ງ!!!")
-                Else
-                    dgvshow.Item(3, eRow).Value = QTy
-                    dgvshow.Item(4, eRow).Value = total_price
-                End If
-
-                'MessageBox.Show(QTy.ToString + " " + total_price.ToString)
+            If proPrice = 0 Then
+                MessageBox.Show("ສິນຄ້ານີ້ບໍ່ມີໃນສະຕ໊ອກແລ້ວກະລຸນາລອງໃໝ່!!!", "ເຕືອນ", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Else
-                If QTy > dt.Rows(0)(4) Then
-                    MessageBox.Show("ຈຳນວນໃນສະຕ໋ອກຕົວຈິງບໍ່ຊອດຄອງກັບຈຳນວນທີ່ທ່ານປ້ອນ ກະລຸນາລອງໃໝ່ອີກຄັ້ງ!!!")
+
+                'MessageBox.Show("ຈຳນວນໃນສະຕ໋ອກຕົວຈິງບໍ່ຊອດຄອງກັບຈຳນວນທີ່ທ່ານປ້ອນ ກະລຸນາລອງໃໝ່ອີກຄັ້ງ!!!")
+                'Else
+                Dim eRow As Integer
+                For i As Integer = 0 To dgvshow.Rows.Count - 1
+                    If dgvshow.Item(0, i).Value.ToString = proID Then
+                        eRow = i
+                        check = True
+                        Exit For
+                    Else
+                        check = False
+                    End If
+                Next
+
+                If check = True Then
+                    'MessageBox.Show("ສິນຄ້ານີ້ມີແລ້ວ")
+
+                    QTy += dgvshow.Item(3, eRow).Value
+                    total_price += dgvshow.Item(4, eRow).Value
+
+                    If QTy > dt.Rows(0)(4) Then
+                        MessageBox.Show("ຈຳນວນໃນສະຕ໋ອກຕົວຈິງບໍ່ຊອດຄອງກັບຈຳນວນທີ່ທ່ານປ້ອນ ກະລຸນາລອງໃໝ່ອີກຄັ້ງ!!!")
+                    Else
+                        dgvshow.Item(3, eRow).Value = QTy
+                        dgvshow.Item(4, eRow).Value = total_price
+                    End If
+
+                    'MessageBox.Show(QTy.ToString + " " + total_price.ToString)
                 Else
-                    dgvshow.Rows.Add(proID, proName, proPrice, QTy, total_price)
+                    If QTy > dt.Rows(0)(4) Then
+                        MessageBox.Show("ຈຳນວນໃນສະຕ໋ອກຕົວຈິງບໍ່ຊອດຄອງກັບຈຳນວນທີ່ທ່ານປ້ອນ ກະລຸນາລອງໃໝ່ອີກຄັ້ງ!!!")
+                    Else
+                        dgvshow.Rows.Add(proID, proName, proPrice, QTy, total_price)
+                    End If
+
+
+                    'dgvshow.Rows.Add(proID, proName, proPrice, QTy, total_price)
                 End If
 
+                totalPrice()
 
-                'dgvshow.Rows.Add(proID, proName, proPrice, QTy, total_price)
             End If
 
-            totalPrice()
+
 
         Else
             MessageBox.Show("ລະຫັດສິນຄ້ານີ້ບໍ່ມີໃນລະບົບກະລຸນາລອງໃໝ່", "ເຕືອນ", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -168,6 +175,7 @@ Public Class Sale
             Label8.ForeColor = System.Drawing.Color.Maroon
             lbCus.Visible = True
             Label8.Visible = True
+            txtCusID.Clear()
         End If
     End Sub
 
@@ -227,7 +235,8 @@ Public Class Sale
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         If pay < cost Or pay = 0 Then
             MessageBox.Show("ກະລຸນາປ້ອນຈຳນວນເງິນໃຫ້ຖືກຕ້ອງ!!!", "ເຕືອນ", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-
+        ElseIf txtCusID.Text = "" Then
+            MessageBox.Show("ກະລຸນາປ້ອນລະຫັດລູກຄ້າ!!!", "ເຕືອນ", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         Else
 
             Dim Sql = "INSERT INTO sale SET emp_id='" + userID + "', cus_id='" + txtCusID.Text + "', sale_pay='" + pay.ToString + "', sale_discount='" + discount.ToString + "'"
@@ -239,13 +248,13 @@ Public Class Sale
             dt = loadingData("SELECT * FROM SALE ORDER BY sale_id DESC LIMIT 1")
 
             If dt.Rows.Count <> 0 Then
-                Dim sale_id = dt.Rows(0)(0)
+                Dim sale_id = dt.Rows(0)(0).ToString
 
                 For i As Integer = 0 To dgvshow.Rows.Count - 1
-                    Dim mdc_id = dgvshow.Rows(i).Cells(0).Value
-                    Dim price = dgvshow.Rows(i).Cells(2).Value
-                    Dim qty = dgvshow.Rows(i).Cells(3).Value
-                    InsertDB("INSERT INTO sale_detail SET sale_id='" + sale_id.ToString + "',mdc_id='" + mdc_id.ToString + "',sd_price='" + price.ToString + "',sd_qty='" + qty.ToString + "'")
+                    Dim mdc_id = dgvshow.Rows(i).Cells(0).Value.ToString
+                    Dim price = dgvshow.Rows(i).Cells(2).Value.ToString
+                    Dim qty = dgvshow.Rows(i).Cells(3).Value.ToString
+                    InsertDB("INSERT INTO sale_detail SET sale_id='" + sale_id + "',mdc_id='" + mdc_id + "',sd_price='" + price + "',sd_qty='" + qty + "'")
                     InsertDB("UPDATE medicine SET mdc_stock = mdc_stock - " + qty + " WHERE mdc_id='" + mdc_id + "'")
                 Next
 

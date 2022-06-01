@@ -70,3 +70,10 @@ C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.searchSale.reso
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.frmPurchase.resources
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.frmRptPurchase.resources
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.frmImport.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.frmRptImport.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.Reports.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewEmployee.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.frmViewReport.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewCustomer.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewSupplier.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewMedicine.resources

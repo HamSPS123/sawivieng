@@ -31,4 +31,10 @@
     Private Sub btnUnit_Click(sender As Object, e As EventArgs) Handles btnUnit.Click
         switchPanel(Unit, "ຈັດການຂໍ້ມູນຫົວໜ່ວຍ")
     End Sub
+
+    Private Sub Management_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+
 End Class

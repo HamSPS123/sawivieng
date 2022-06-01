@@ -197,6 +197,12 @@
     <Compile Include="frmRptPurchase.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmViewReport.Designer.vb">
+      <DependentUpon>frmViewReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -232,10 +238,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="rptBill.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptBill.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCustomer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCustomer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptEmployees.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEmployees.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="rptImport.vb">
@@ -244,10 +268,22 @@
       <DependentUpon>rptImport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptMedicine.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMedicine.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="rptPurchase.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptPurchase.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSupplier.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSupplier.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Sale.Designer.vb">
@@ -290,6 +326,30 @@
       <DependentUpon>Unit.vb</DependentUpon>
     </Compile>
     <Compile Include="Unit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewCustomer.Designer.vb">
+      <DependentUpon>viewCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewEmployee.Designer.vb">
+      <DependentUpon>viewEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewMedicine.Designer.vb">
+      <DependentUpon>viewMedicine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewMedicine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewSupplier.Designer.vb">
+      <DependentUpon>viewSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewSupplier.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -349,6 +409,9 @@
     <EmbeddedResource Include="frmRptPurchase.resx">
       <DependentUpon>frmRptPurchase.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmViewReport.resx">
+      <DependentUpon>frmViewReport.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -364,17 +427,36 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rptBill.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptBill.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCustomer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCustomer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEmployees.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEmployees.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="rptImport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptImport.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptMedicine.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMedicine.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="rptPurchase.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptPurchase.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSupplier.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSupplier.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Sale.resx">
       <DependentUpon>Sale.vb</DependentUpon>
@@ -396,6 +478,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Unit.resx">
       <DependentUpon>Unit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewCustomer.resx">
+      <DependentUpon>viewCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewEmployee.resx">
+      <DependentUpon>viewEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewMedicine.resx">
+      <DependentUpon>viewMedicine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewSupplier.resx">
+      <DependentUpon>viewSupplier.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

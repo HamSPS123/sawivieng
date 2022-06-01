@@ -121,14 +121,14 @@
             dt = loadingData("SELECT * FROM tb_import ORDER BY imp_id DESC LIMIT 1")
 
             If dt.Rows.Count <> 0 Then
-                Dim imp_id = dt.Rows(0)(0)
+                Dim imp_id = dt.Rows(0)(0).ToString
 
                 For i As Integer = 0 To dgvshow.Rows.Count - 1
-                    Dim mdc_id = dgvshow.Rows(i).Cells(0).Value
-                    Dim price = dgvshow.Rows(i).Cells(2).Value
-                    Dim qty = dgvshow.Rows(i).Cells(3).Value
-                    InsertDB("INSERT INTO import_detail SET imp_id='" + imp_id.ToString + "',mdc_id='" + mdc_id.ToString + "',imp_price='" + price.ToString + "',imp_qty='" + qty.ToString + "'")
-                    InsertDB("UPDATE medicine SET mdc_stock = mdc_stock + " + qty + ", mdc_price = '" + price.ToString + "' WHERE mdc_id='" + mdc_id + "'")
+                    Dim mdc_id = dgvshow.Rows(i).Cells(0).Value.ToString
+                    Dim price = dgvshow.Rows(i).Cells(2).Value.ToString
+                    Dim qty = dgvshow.Rows(i).Cells(3).Value.ToString
+                    InsertDB("INSERT INTO import_detail SET imp_id='" + imp_id + "',mdc_id='" + mdc_id + "',imp_prices='" + price + "',imp_qty='" + qty + "'")
+                    InsertDB("UPDATE medicine SET mdc_stock = mdc_stock + " + qty + ", mdc_price = '" + price + "' WHERE mdc_id='" + mdc_id + "'")
 
                 Next
 
@@ -157,5 +157,17 @@
         txtQTY.Value = 1
         txtPrice.Clear()
         txtTotalPrice.Text = 0.ToString("#,##0.00 ກີບ")
+    End Sub
+
+    Private Sub dgvshow_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvshow.CellContentClick
+        If e.ColumnIndex = 5 Then
+            Dim cindex As Integer = dgvshow.CurrentRow.Index
+
+            'MessageBox.Show(cindex)
+            If MessageBox.Show("ທ່ານຕ້ອງການລົບລາຍການນີ້ຫຼືບໍ່?", "ຄຳຖາມ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+                dgvshow.Rows.Remove(dgvshow.Rows(cindex))
+                totalPrice()
+            End If
+        End If
     End Sub
 End Class

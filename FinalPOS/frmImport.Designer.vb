@@ -22,9 +22,9 @@ Partial Class frmImport
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmImport))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
@@ -40,14 +40,14 @@ Partial Class frmImport
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtTotalPrice = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtPrice = New System.Windows.Forms.TextBox()
         Me.btnAddCard = New System.Windows.Forms.Button()
         Me.btnSeachPro = New System.Windows.Forms.Button()
         Me.txtQTY = New System.Windows.Forms.NumericUpDown()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtProID = New System.Windows.Forms.TextBox()
-        Me.txtPrice = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         CType(Me.dgvshow, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,21 +85,21 @@ Partial Class frmImport
         '
         Me.dgvshow.AllowUserToAddRows = False
         Me.dgvshow.AllowUserToDeleteRows = False
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(239, Byte), Integer))
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
-        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.dgvshow.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(239, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.dgvshow.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvshow.BackgroundColor = System.Drawing.Color.White
         Me.dgvshow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(184, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Saysettha OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
-        DataGridViewCellStyle14.Padding = New System.Windows.Forms.Padding(5)
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvshow.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(184, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Saysettha OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
+        DataGridViewCellStyle2.Padding = New System.Windows.Forms.Padding(5)
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvshow.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvshow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvshow.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
         Me.dgvshow.Dock = System.Windows.Forms.DockStyle.Fill
@@ -108,9 +108,9 @@ Partial Class frmImport
         Me.dgvshow.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvshow.Name = "dgvshow"
         Me.dgvshow.RowHeadersWidth = 51
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black
-        Me.dgvshow.RowsDefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        Me.dgvshow.RowsDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvshow.RowTemplate.Height = 24
         Me.dgvshow.Size = New System.Drawing.Size(942, 492)
         Me.dgvshow.TabIndex = 1
@@ -227,6 +227,13 @@ Partial Class frmImport
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "ຂໍ້ມູນສິນຄ້າ"
         '
+        'txtPrice
+        '
+        Me.txtPrice.Location = New System.Drawing.Point(523, 74)
+        Me.txtPrice.Name = "txtPrice"
+        Me.txtPrice.Size = New System.Drawing.Size(228, 37)
+        Me.txtPrice.TabIndex = 4
+        '
         'btnAddCard
         '
         Me.btnAddCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
@@ -259,6 +266,15 @@ Partial Class frmImport
         Me.txtQTY.TabIndex = 2
         Me.txtQTY.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(518, 44)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(50, 27)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "ລາຄາ"
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -284,22 +300,6 @@ Partial Class frmImport
         Me.txtProID.Name = "txtProID"
         Me.txtProID.Size = New System.Drawing.Size(241, 37)
         Me.txtProID.TabIndex = 0
-        '
-        'txtPrice
-        '
-        Me.txtPrice.Location = New System.Drawing.Point(523, 74)
-        Me.txtPrice.Name = "txtPrice"
-        Me.txtPrice.Size = New System.Drawing.Size(228, 37)
-        Me.txtPrice.TabIndex = 4
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(518, 44)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(50, 27)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "ລາຄາ"
         '
         'frmImport
         '

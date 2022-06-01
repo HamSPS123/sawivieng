@@ -47,4 +47,8 @@
     Private Sub item3_Click(sender As Object, e As EventArgs) Handles item3.Click
         switchPanel(frmPurchase, "ການສັ່ງຊື້ສິນຄ້າ")
     End Sub
+
+    Private Sub item5_Click(sender As Object, e As EventArgs) Handles item5.Click
+        switchPanel(Reports, "ການສ້າງລາຍງານ")
+    End Sub
 End Class
