@@ -250,6 +250,12 @@
       <DependentUpon>rptBill.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptcPurchase.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptcPurchase.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="rptCustomer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -268,6 +274,12 @@
       <DependentUpon>rptImport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptImportDetail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptImportDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="rptMedicine.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -280,10 +292,22 @@
       <DependentUpon>rptPurchase.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptSale.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSale.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="rptSupplier.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptSupplier.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptType.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptType.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Sale.Designer.vb">
@@ -340,16 +364,40 @@
     <Compile Include="viewEmployee.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="viewImport.Designer.vb">
+      <DependentUpon>viewImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="viewMedicine.Designer.vb">
       <DependentUpon>viewMedicine.vb</DependentUpon>
     </Compile>
     <Compile Include="viewMedicine.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="viewPurchase.Designer.vb">
+      <DependentUpon>viewPurchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewSale.Designer.vb">
+      <DependentUpon>viewSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="viewSupplier.Designer.vb">
       <DependentUpon>viewSupplier.vb</DependentUpon>
     </Compile>
     <Compile Include="viewSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewType.Designer.vb">
+      <DependentUpon>viewType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewType.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -434,6 +482,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptBill.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptcPurchase.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptcPurchase.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="rptCustomer.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptCustomer.vb</LastGenOutput>
@@ -446,6 +498,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptImport.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptImportDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptImportDetail.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="rptMedicine.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptMedicine.vb</LastGenOutput>
@@ -454,9 +510,17 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptPurchase.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptSale.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSale.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="rptSupplier.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptSupplier.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptType.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptType.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Sale.resx">
       <DependentUpon>Sale.vb</DependentUpon>
@@ -485,11 +549,23 @@
     <EmbeddedResource Include="viewEmployee.resx">
       <DependentUpon>viewEmployee.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="viewImport.resx">
+      <DependentUpon>viewImport.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="viewMedicine.resx">
       <DependentUpon>viewMedicine.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="viewPurchase.resx">
+      <DependentUpon>viewPurchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewSale.resx">
+      <DependentUpon>viewSale.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="viewSupplier.resx">
       <DependentUpon>viewSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewType.resx">
+      <DependentUpon>viewType.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

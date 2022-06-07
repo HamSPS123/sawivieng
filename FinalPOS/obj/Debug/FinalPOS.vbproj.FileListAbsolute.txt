@@ -77,3 +77,7 @@ C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.frmViewReport.r
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewCustomer.resources
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewSupplier.resources
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewMedicine.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewType.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewSale.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewImport.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewPurchase.resources

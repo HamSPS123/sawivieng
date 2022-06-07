@@ -23,4 +23,20 @@
     Private Sub btnMed_Click(sender As Object, e As EventArgs) Handles btnMed.Click
         switchPanel(viewMedicine, "ລາຍງານຂໍ້ມູນຢາ")
     End Sub
+
+    Private Sub btnType_Click(sender As Object, e As EventArgs) Handles btnType.Click
+        switchPanel(viewType, "ລາຍງານຂໍ້ມູນປະເພດຢາ")
+    End Sub
+
+    Private Sub btnUnit_Click(sender As Object, e As EventArgs) Handles btnUnit.Click
+        switchPanel(viewSale, "ລາຍງານຂໍ້ມູນການຂາຍ")
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        switchPanel(viewPurchase, "ລາຍງານຂໍ້ມູນການສັ່ງຊື້")
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        switchPanel(viewImport, "ລາຍງານຂໍ້ມູນການນຳເຂົ້າ")
+    End Sub
 End Class

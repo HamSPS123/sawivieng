@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Supplier
+Partial Class viewSale
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,51 +22,109 @@ Partial Class Supplier
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Supplier))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(viewSale))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnAdd = New System.Windows.Forms.Button()
-        Me.dgvshow = New System.Windows.Forms.DataGridView()
-        Me.txtSearch = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnPrint = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnReset = New System.Windows.Forms.Button()
+        Me.txttdate = New System.Windows.Forms.DateTimePicker()
+        Me.btnSearch = New System.Windows.Forms.Button()
+        Me.txtfdate = New System.Windows.Forms.DateTimePicker()
+        Me.dgvshow = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
-        CType(Me.dgvshow, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.dgvshow, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Panel1.Controls.Add(Me.btnAdd)
+        Me.Panel1.Controls.Add(Me.btnPrint)
         Me.Panel1.Controls.Add(Me.GroupBox1)
         Me.Panel1.Controls.Add(Me.dgvshow)
-        Me.Panel1.Location = New System.Drawing.Point(37, 12)
+        Me.Panel1.Location = New System.Drawing.Point(42, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(921, 683)
-        Me.Panel1.TabIndex = 2
+        Me.Panel1.Size = New System.Drawing.Size(921, 758)
+        Me.Panel1.TabIndex = 3
         '
-        'btnAdd
+        'btnPrint
         '
-        Me.btnAdd.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(96, Byte), Integer))
-        Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAdd.Font = New System.Drawing.Font("Saysettha OT", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnAdd.ForeColor = System.Drawing.Color.White
-        Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
-        Me.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnAdd.Location = New System.Drawing.Point(781, 34)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(137, 47)
-        Me.btnAdd.TabIndex = 2
-        Me.btnAdd.Text = "ເພີ່ມຂໍ້ມູນ"
-        Me.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAdd.UseVisualStyleBackColor = False
+        Me.btnPrint.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnPrint.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(96, Byte), Integer))
+        Me.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPrint.Font = New System.Drawing.Font("Saysettha OT", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnPrint.ForeColor = System.Drawing.Color.White
+        Me.btnPrint.Image = CType(resources.GetObject("btnPrint.Image"), System.Drawing.Image)
+        Me.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnPrint.Location = New System.Drawing.Point(772, 34)
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Size = New System.Drawing.Size(146, 47)
+        Me.btnPrint.TabIndex = 8
+        Me.btnPrint.Text = "ພິມລາຍງານ"
+        Me.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPrint.UseVisualStyleBackColor = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.btnReset)
+        Me.GroupBox1.Controls.Add(Me.txttdate)
+        Me.GroupBox1.Controls.Add(Me.btnSearch)
+        Me.GroupBox1.Controls.Add(Me.txtfdate)
+        Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.GroupBox1.Font = New System.Drawing.Font("Saysettha OT", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(19, 16)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(480, 65)
+        Me.GroupBox1.TabIndex = 8
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "ເລືອກວັນທີ"
+        '
+        'btnReset
+        '
+        Me.btnReset.BackgroundImage = CType(resources.GetObject("btnReset.BackgroundImage"), System.Drawing.Image)
+        Me.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnReset.FlatAppearance.BorderSize = 0
+        Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReset.Location = New System.Drawing.Point(412, 25)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(46, 33)
+        Me.btnReset.TabIndex = 3
+        Me.btnReset.UseVisualStyleBackColor = True
+        '
+        'txttdate
+        '
+        Me.txttdate.CustomFormat = "yyyy-MM-dd"
+        Me.txttdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.txttdate.Location = New System.Drawing.Point(172, 22)
+        Me.txttdate.Name = "txttdate"
+        Me.txttdate.Size = New System.Drawing.Size(164, 37)
+        Me.txttdate.TabIndex = 7
+        '
+        'btnSearch
+        '
+        Me.btnSearch.BackgroundImage = CType(resources.GetObject("btnSearch.BackgroundImage"), System.Drawing.Image)
+        Me.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnSearch.FlatAppearance.BorderSize = 0
+        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearch.Location = New System.Drawing.Point(360, 25)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(46, 33)
+        Me.btnSearch.TabIndex = 3
+        Me.btnSearch.UseVisualStyleBackColor = True
+        '
+        'txtfdate
+        '
+        Me.txtfdate.CustomFormat = "yyyy-MM-dd"
+        Me.txtfdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.txtfdate.Location = New System.Drawing.Point(3, 22)
+        Me.txtfdate.Name = "txtfdate"
+        Me.txtfdate.Size = New System.Drawing.Size(163, 37)
+        Me.txtfdate.TabIndex = 6
         '
         'dgvshow
         '
@@ -115,63 +173,31 @@ Partial Class Supplier
         DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
         Me.dgvshow.RowsDefaultCellStyle = DataGridViewCellStyle5
         Me.dgvshow.RowTemplate.Height = 24
-        Me.dgvshow.Size = New System.Drawing.Size(915, 573)
+        Me.dgvshow.Size = New System.Drawing.Size(915, 648)
         Me.dgvshow.TabIndex = 0
         '
-        'txtSearch
-        '
-        Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearch.Font = New System.Drawing.Font("Saysettha OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearch.Location = New System.Drawing.Point(6, 21)
-        Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(257, 30)
-        Me.txtSearch.TabIndex = 0
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(269, 20)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(33, 31)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.PictureBox1)
-        Me.GroupBox1.Controls.Add(Me.txtSearch)
-        Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.GroupBox1.Font = New System.Drawing.Font("Saysettha OT", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(14, 34)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(309, 58)
-        Me.GroupBox1.TabIndex = 1
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "ຄົ້ນຫາ"
-        '
-        'Supplier
+        'viewSale
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(994, 707)
+        Me.ClientSize = New System.Drawing.Size(1005, 774)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Supplier"
-        Me.Text = "Supplier"
+        Me.Name = "viewSale"
+        Me.Text = "viewSale"
         Me.Panel1.ResumeLayout(False)
-        CType(Me.dgvshow, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        CType(Me.dgvshow, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents btnAdd As Button
     Friend WithEvents dgvshow As DataGridView
+    Friend WithEvents txttdate As DateTimePicker
+    Friend WithEvents txtfdate As DateTimePicker
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents txtSearch As TextBox
+    Friend WithEvents btnReset As Button
+    Friend WithEvents btnSearch As Button
+    Friend WithEvents btnPrint As Button
 End Class
