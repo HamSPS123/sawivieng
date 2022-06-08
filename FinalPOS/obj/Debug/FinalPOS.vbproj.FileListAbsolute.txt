@@ -81,3 +81,5 @@ C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewType.resour
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewSale.resources
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewImport.resources
 C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewPurchase.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewRevenue.resources
+C:\Users\spsh1\source\repos\FinalPOS\FinalPOS\obj\Debug\FinalPOS.viewExpense.resources

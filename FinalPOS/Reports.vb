@@ -39,4 +39,12 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         switchPanel(viewImport, "ລາຍງານຂໍ້ມູນການນຳເຂົ້າ")
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        switchPanel(viewRevenue, "ລາຍງານຂໍ້ມູນລາຍຮັບ")
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        switchPanel(viewExpense, "ລາຍງານຂໍ້ມູນລາຍຈ່າຍ")
+    End Sub
 End Class

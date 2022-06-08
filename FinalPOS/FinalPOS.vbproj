@@ -268,6 +268,24 @@
       <DependentUpon>rptEmployees.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptExpense.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptExpense.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptExpenseMonth.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptExpenseMonth.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptExpenseYear.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptExpenseYear.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="rptImport.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -290,6 +308,24 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptPurchase.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptRevenue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRevenue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptRevenueMonth.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRevenueMonth.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptRevenueYear.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRevenueYear.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="rptSale.vb">
@@ -364,6 +400,12 @@
     <Compile Include="viewEmployee.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="viewExpense.Designer.vb">
+      <DependentUpon>viewExpense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewExpense.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="viewImport.Designer.vb">
       <DependentUpon>viewImport.vb</DependentUpon>
     </Compile>
@@ -380,6 +422,12 @@
       <DependentUpon>viewPurchase.vb</DependentUpon>
     </Compile>
     <Compile Include="viewPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewRevenue.Designer.vb">
+      <DependentUpon>viewRevenue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewRevenue.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="viewSale.Designer.vb">
@@ -494,6 +542,18 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptEmployees.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptExpense.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptExpense.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptExpenseMonth.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptExpenseMonth.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptExpenseYear.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptExpenseYear.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="rptImport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptImport.vb</LastGenOutput>
@@ -509,6 +569,18 @@
     <EmbeddedResource Include="rptPurchase.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptPurchase.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptRevenue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRevenue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptRevenueMonth.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRevenueMonth.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptRevenueYear.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRevenueYear.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="rptSale.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -549,6 +621,9 @@
     <EmbeddedResource Include="viewEmployee.resx">
       <DependentUpon>viewEmployee.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="viewExpense.resx">
+      <DependentUpon>viewExpense.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="viewImport.resx">
       <DependentUpon>viewImport.vb</DependentUpon>
     </EmbeddedResource>
@@ -557,6 +632,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="viewPurchase.resx">
       <DependentUpon>viewPurchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewRevenue.resx">
+      <DependentUpon>viewRevenue.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="viewSale.resx">
       <DependentUpon>viewSale.vb</DependentUpon>

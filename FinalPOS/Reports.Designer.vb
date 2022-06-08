@@ -26,7 +26,6 @@ Partial Class Reports
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.btnUnit = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnType = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -44,7 +43,6 @@ Partial Class Reports
         Me.Panel1.AutoScroll = True
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.btnUnit)
-        Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.btnType)
         Me.Panel1.Controls.Add(Me.Button4)
@@ -92,23 +90,6 @@ Partial Class Reports
         Me.btnUnit.Text = "ຂໍ້ມູນການຂາຍ"
         Me.btnUnit.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnUnit.UseVisualStyleBackColor = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Saysettha OT", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
-        Me.Button5.Location = New System.Drawing.Point(457, 801)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Padding = New System.Windows.Forms.Padding(0, 15, 0, 15)
-        Me.Button5.Size = New System.Drawing.Size(210, 171)
-        Me.Button5.TabIndex = 0
-        Me.Button5.Text = "ຂໍ້ມູນຢາໝົດອາຍຸ"
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button5.UseVisualStyleBackColor = False
         '
         'Button2
         '
@@ -270,6 +251,5 @@ Partial Class Reports
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
 End Class
