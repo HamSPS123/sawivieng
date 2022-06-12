@@ -51,4 +51,14 @@
     Private Sub item5_Click(sender As Object, e As EventArgs) Handles item5.Click
         switchPanel(Reports, "ການສ້າງລາຍງານ")
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        If MessageBox.Show("ທ່ານຕ້ອງການອອກຈາກລະບົບ ຫຼື ບໍ່", "ຄຳຖາມ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            userID = ""
+            userName = ""
+
+            Login.Show()
+            Me.Close()
+        End If
+    End Sub
 End Class

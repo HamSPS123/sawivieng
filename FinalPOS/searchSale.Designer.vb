@@ -22,9 +22,9 @@ Partial Class searchSale
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgvshow = New System.Windows.Forms.DataGridView()
         Me.txtFdate = New System.Windows.Forms.DateTimePicker()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -38,48 +38,48 @@ Partial Class searchSale
         '
         Me.dgvshow.AllowUserToAddRows = False
         Me.dgvshow.AllowUserToDeleteRows = False
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(239, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.dgvshow.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(239, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.dgvshow.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvshow.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvshow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvshow.BackgroundColor = System.Drawing.Color.White
         Me.dgvshow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(184, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Saysettha OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
-        DataGridViewCellStyle5.Padding = New System.Windows.Forms.Padding(5)
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvshow.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(184, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Saysettha OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
+        DataGridViewCellStyle2.Padding = New System.Windows.Forms.Padding(5)
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvshow.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvshow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvshow.EnableHeadersVisualStyles = False
         Me.dgvshow.Location = New System.Drawing.Point(13, 81)
         Me.dgvshow.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dgvshow.Name = "dgvshow"
         Me.dgvshow.RowHeadersWidth = 51
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
-        Me.dgvshow.RowsDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        Me.dgvshow.RowsDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvshow.RowTemplate.Height = 24
         Me.dgvshow.Size = New System.Drawing.Size(1008, 450)
         Me.dgvshow.TabIndex = 10
         '
         'txtFdate
         '
-        Me.txtFdate.CustomFormat = "yyyy-mm-dd"
+        Me.txtFdate.CustomFormat = "yyyy-MM-dd"
         Me.txtFdate.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
-        Me.txtFdate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.txtFdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.txtFdate.Location = New System.Drawing.Point(74, 25)
         Me.txtFdate.Name = "txtFdate"
         Me.txtFdate.Size = New System.Drawing.Size(162, 37)
         Me.txtFdate.TabIndex = 12
-        Me.txtFdate.Value = New Date(2022, 5, 22, 0, 0, 0, 0)
+        Me.txtFdate.Value = New Date(2022, 6, 12, 0, 0, 0, 0)
         '
         'Label1
         '
@@ -93,9 +93,9 @@ Partial Class searchSale
         '
         'txtTdate
         '
-        Me.txtTdate.CustomFormat = "yyyy-mm-dd"
+        Me.txtTdate.CustomFormat = "yyyy-MM-dd"
         Me.txtTdate.Font = New System.Drawing.Font("Saysettha OT", 10.2!)
-        Me.txtTdate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.txtTdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.txtTdate.Location = New System.Drawing.Point(308, 25)
         Me.txtTdate.Name = "txtTdate"
         Me.txtTdate.Size = New System.Drawing.Size(162, 37)

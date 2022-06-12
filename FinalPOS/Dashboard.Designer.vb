@@ -189,11 +189,10 @@ Partial Class Dashboard
         'lbuser
         '
         Me.lbuser.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbuser.AutoSize = True
         Me.lbuser.Font = New System.Drawing.Font("Saysettha OT", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.lbuser.Location = New System.Drawing.Point(1156, 16)
+        Me.lbuser.Location = New System.Drawing.Point(921, 16)
         Me.lbuser.Name = "lbuser"
-        Me.lbuser.Size = New System.Drawing.Size(115, 32)
+        Me.lbuser.Size = New System.Drawing.Size(350, 32)
         Me.lbuser.TabIndex = 1
         Me.lbuser.Text = "Username"
         Me.lbuser.TextAlign = System.Drawing.ContentAlignment.MiddleRight

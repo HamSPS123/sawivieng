@@ -20,7 +20,7 @@
         If search = "" Then
             sql = "SELECT * FROM customer"
         Else
-            sql = "SELECT * FROM customer WHERE cusname LIKE '%" + search + "%'"
+            sql = "SELECT * FROM customer WHERE cus_name LIKE '%" + search + "%'"
         End If
 
         dt = loadingData(sql)
