@@ -364,6 +364,12 @@
     <Compile Include="SearchProduct.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="searchPurchase.Designer.vb">
+      <DependentUpon>searchPurchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="searchPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="searchSale.Designer.vb">
       <DependentUpon>searchSale.vb</DependentUpon>
     </Compile>
@@ -602,6 +608,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SearchProduct.resx">
       <DependentUpon>SearchProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchPurchase.resx">
+      <DependentUpon>searchPurchase.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="searchSale.resx">
       <DependentUpon>searchSale.vb</DependentUpon>

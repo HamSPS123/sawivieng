@@ -5,7 +5,7 @@ Module App
     Dim conn As New MySqlConnection
     Dim cmd As New MySqlCommand
     Dim dr As MySqlDataReader
-    Dim conStr = "server=localhost;userid=root;password=;database=sawiveing_pharmacy;Convert Zero Datetime=True"
+    Dim conStr = "server=localhost;userid=root;password=;database=sawiveing_pharmacy;Convert Zero Datetime=True;Character Set=utf8;"
 
     Public userID As String
     Public userName As String
